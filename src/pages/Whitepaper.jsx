@@ -85,7 +85,7 @@ export default function Whitepaper() {
           <div className="order-2 md:order-1 col-span-full md:col-span-1 flex justify-center px-4 md:px-0">
             <div className="rounded-2xl overflow-hidden border-4 border-purple-500/30 shadow-2xl shadow-purple-500/50" style={{ width: 'clamp(180px, 55vw, 260px)', height: 'clamp(180px, 55vw, 260px)' }}>
               <img
-                src="https://inoai.org/wp-content/uploads/2025/05/ino-avatar.jpg"
+                src="https://inoai.org/wp-content/uploads/2025/05/InoAi-logo.svg"
                 alt="INO Identity"
                 className="w-full h-full object-cover"
               />
