@@ -166,7 +166,7 @@ export default function Whitepaper() {
           <div className="order-2 md:order-none col-span-full md:col-span-1 flex justify-center px-4 md:px-0">
             <div className="rounded-2xl overflow-hidden border-4 border-pink-500/30 shadow-2xl shadow-pink-500/50" style={{ width: 'clamp(200px, 70vw, 256px)', height: 'clamp(280px, 95vw, 384px)' }}>
               <img
-                src="https://inoai.org/wp-content/uploads/2025/05/transformation-ino.png"
+                src="https://inoai.org/wp-content/uploads/2025/05/ino-essence-new.jpg"
                 alt="Kcanther INO"
                 className="w-full h-full object-cover"
               />
