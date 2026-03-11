@@ -6,7 +6,7 @@ export default function AboutSection() {
       <div className="flex flex-col sm:flex-row h-full">
         <div className="sm:w-36 flex-shrink-0 flex items-center justify-center p-4">
           <img
-            src="https://inoai.org/wp-content/uploads/2025/05/ino-avatar.jpg"
+            src="https://inoai.org/wp-content/uploads/2025/05/kcanther-ino-inoai.png"
             alt="INO Avatar"
             className="w-24 h-24 rounded-full object-cover ring-2 ring-purple-500/30"
           />
