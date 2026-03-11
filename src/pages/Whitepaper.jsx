@@ -5,7 +5,6 @@ import { Button } from '@/components/ui/button';
 import { BookOpen, Home } from 'lucide-react';
 import { createPageUrl } from '@/utils';
 import { Link } from 'react-router-dom';
-import SpinningToken3D from '@/components/inoai/SpinningToken3D';
 import Footer from '@/components/inoai/Footer';
 
 export default function Whitepaper() {
@@ -84,8 +83,12 @@ export default function Whitepaper() {
           className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 items-center"
         >
           <div className="order-2 md:order-1 col-span-full md:col-span-1 flex justify-center px-4 md:px-0">
-            <div style={{ width: '150px', height: '150px' }} className="md:w-48 md:h-48 rounded-2xl border-4 border-purple-500/30 shadow-2xl shadow-purple-500/50" style={{ width: 'clamp(120px, 30vw, 192px)', height: 'clamp(120px, 30vw, 192px)' }}>
-              <SpinningToken3D />
+            <div className="rounded-2xl overflow-hidden border-4 border-purple-500/30 shadow-2xl shadow-purple-500/50" style={{ width: 'clamp(180px, 55vw, 260px)', height: 'clamp(180px, 55vw, 260px)' }}>
+              <img
+                src="https://inoai.org/wp-content/uploads/2025/05/ino-avatar.jpg"
+                alt="INO Identity"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
 
@@ -163,7 +166,7 @@ export default function Whitepaper() {
           <div className="order-2 md:order-none col-span-full md:col-span-1 flex justify-center px-4 md:px-0">
             <div className="rounded-2xl overflow-hidden border-4 border-pink-500/30 shadow-2xl shadow-pink-500/50" style={{ width: 'clamp(200px, 70vw, 256px)', height: 'clamp(280px, 95vw, 384px)' }}>
               <img
-                src="https://inoai.org/wp-content/uploads/2025/05/kcanther-ino-inoai.png"
+                src="https://inoai.org/wp-content/uploads/2025/05/transformation-ino.png"
                 alt="Kcanther INO"
                 className="w-full h-full object-cover"
               />
