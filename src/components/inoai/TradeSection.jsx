@@ -11,7 +11,7 @@ export default function TradeSection() {
         <GlassCard className="p-0 overflow-hidden">
           <div className="relative w-full" style={{ paddingBottom: "65%" }}>
             <iframe
-              src="https://dexscreener.com/cronos/0x025f1575908d85815198390B2e5366FE754F8207?embed=1&theme=dark&trades=0&info=0"
+              src="https://www.geckoterminal.com/cro/pools/0x8359cbcd88f5b1791bd158e7a2b83c977674f6c2?embed=1"
               className="absolute inset-0 w-full h-full border-0 rounded-2xl"
               title="DexScreener Trade Chart"
             />
@@ -19,7 +19,7 @@ export default function TradeSection() {
         </GlassCard>
         <div className="mt-4 flex justify-center">
           <a
-            href="https://dexscreener.com/cronos/0x025f1575908d85815198390B2e5366FE754F8207"
+            href="https://www.geckoterminal.com/cro/pools/0x8359cbcd88f5b1791bd158e7a2b83c977674f6c2"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-sm text-purple-400 hover:text-purple-300 transition-colors"

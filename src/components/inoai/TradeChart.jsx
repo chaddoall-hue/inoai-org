@@ -41,7 +41,7 @@ export default function TradeChart() {
         <div className="flex items-center gap-2">
           <TrendingUp className="w-4 h-4 text-purple-400" />
           <div>
-            <p className="text-[10px] uppercase tracking-widest text-gray-600 mb-0.5">DexScreener</p>
+            <p className="text-[10px] uppercase tracking-widest text-gray-600 mb-0.5">GeckoTerminal</p>
             <h3 className="text-sm font-bold text-white">{chartData.pairName}</h3>
           </div>
         </div>
@@ -68,7 +68,7 @@ export default function TradeChart() {
           src={chartData.url}
           className="absolute inset-0 w-full h-full border-0"
           style={{ border: 0 }}
-          title="DexScreener Chart"
+          title="GeckoTerminal Chart"
           loading="lazy"
         />
       </div>
