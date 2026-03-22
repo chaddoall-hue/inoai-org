@@ -10,7 +10,7 @@ export default function TradeChart() {
           <h3 className="text-sm font-bold text-white">INO / CRO</h3>
         </div>
         <a
-          href="https://dexscreener.com/cronos/0x8359cbCD88F5b1791bD158e7A2b83c977674F6C2"
+          href="https://dexscreener.com/cronos/0x025f1575908d85815198390B2e5366FE754F8207"
           target="_blank" rel="noopener noreferrer"
           className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium bg-purple-500/10 text-purple-300 hover:bg-purple-500/20 transition-colors border border-purple-500/15"
         >
@@ -20,7 +20,7 @@ export default function TradeChart() {
       </div>
       <div className="relative flex-1" style={{ minHeight: 320 }}>
         <iframe
-          src="https://dexscreener.com/cronos/0x8359cbCD88F5b1791bD158e7A2b83c977674F6C2?embed=1&theme=dark&trades=0&info=0"
+          src="https://dexscreener.com/cronos/0x025f1575908d85815198390B2e5366FE754F8207?embed=1&theme=dark&trades=0&info=0"
           className="absolute inset-0 w-full h-full"
           style={{ border: 0 }}
           title="DexScreener Chart"
