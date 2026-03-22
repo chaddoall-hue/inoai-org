@@ -20,7 +20,7 @@ export default function TradeChart() {
       </div>
       <div className="relative flex-1" style={{ minHeight: 320 }}>
         <iframe
-          src="https://dexscreener.com/cronos/0x4A0C40d7bcA1D332C3e3a1Fff694fa4A9E81c03A?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=0&chartType=usd&interval=15"
+          src="https://dexscreener.com/cronos/0x4A0C40d7bcA1D332C3e3a1Fff694fa4A9E81c03A?embed=1&theme=dark&trades=0&info=0"
           className="absolute inset-0 w-full h-full"
           style={{ border: 0 }}
           title="DexScreener Chart"
