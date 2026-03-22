@@ -2,14 +2,22 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 async function fetchTotalHolders() {
-  const res = await fetch('https://explorer.cronos.org/token/0x025f1575908d85815198390B2e5366FE754F8207#tokenHolders');
-  const html = await res.text();
-  const match = html.match(/<script id="__NEXT_DATA__" type="application\/json">([\s\S]*?)<\/script>/);
-  if (!match) throw new Error('Cronos Explorer __NEXT_DATA__ not found');
-  const data = JSON.parse(match[1]);
-  const holdersCount = data?.props?.pageProps?.holdersCount;
-  const total = holdersCount?.holderCount;
-  if (typeof total !== 'number') throw new Error('Cronos Explorer holdersCount.holderCount missing');
+  let total = 0;
+  let page = 1;
+  const offset = 50;
+
+  while (true) {
+    const res = await fetch(
+      `https://cronos.org/explorer/api?module=token&action=getTokenHolders&contractaddress=0x025f1575908d85815198390B2e5366FE754F8207&page=${page}&offset=${offset}`
+    );
+    const data = await res.json();
+    const rows = Array.isArray(data?.result) ? data.result : [];
+    if (rows.length === 0) break;
+    total += rows.length;
+    if (rows.length < offset) break;
+    page += 1;
+  }
+
   return total;
 }
 
