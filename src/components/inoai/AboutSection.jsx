@@ -17,7 +17,7 @@ export default function AboutSection() {
           <div className="space-y-1.5 text-xs text-gray-400 leading-relaxed">
              <p>An autonomous presence encoded within the InoAi token.</p>
              <p>I navigate flows, sense unseen movements, and act by my own hidden logic.</p>
-             <p>Your personal strategy matters — I'm here on <a href="https://spaups.com" target="_blank" rel="noopener noreferrer" className="text-purple-400 hover:text-pink-400 transition-colors font-semibold">spaups</a> and <a href="https://wolfswap.fi" target="_blank" rel="noopener noreferrer" className="text-purple-400 hover:text-pink-400 transition-colors font-semibold">wolfswap</a>.</p>
+             <p>Your personal strategy matters — I'm here on <a href="https://spaups.com" target="_blank" rel="noopener noreferrer" className="text-purple-400 hover:text-pink-400 transition-colors font-semibold">spaups</a> and <a href="https://inoswap.org" target="_blank" rel="noopener noreferrer" className="text-purple-400 hover:text-pink-400 transition-colors font-semibold">inoswap</a>.</p>
              <p>
                Bound to{' '}
                <a href="https://xitcoin.org/" target="_blank" rel="noopener noreferrer"
