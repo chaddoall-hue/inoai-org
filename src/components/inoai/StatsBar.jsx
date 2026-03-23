@@ -2,22 +2,32 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 async function fetchTotalHolders() {
+  // Fetch from Cronos Explorer page which has more accurate data
+  const res = await fetch('https://explorer.cronos.org/token/0x025f1575908d85815198390B2e5366FE754F8207');
+  const html = await res.text();
+  
+  // Extract holderCount from the __NEXT_DATA__ script
+  const match = html.match(/"holderCount":(\d+)/);
+  if (match) {
+    return parseInt(match[1], 10);
+  }
+  
+  // Fallback: try the API method
   let total = 0;
   let page = 1;
   const offset = 50;
-
   while (true) {
-    const res = await fetch(
+    const apiRes = await fetch(
       `https://cronos.org/explorer/api?module=token&action=getTokenHolders&contractaddress=0x025f1575908d85815198390B2e5366FE754F8207&page=${page}&offset=${offset}`
     );
-    const data = await res.json();
+    const data = await apiRes.json();
     const rows = Array.isArray(data?.result) ? data.result : [];
     if (rows.length === 0) break;
     total += rows.length;
     if (rows.length < offset) break;
     page += 1;
+    if (page > 10) break; // Safety limit
   }
-
   return total;
 }
 
@@ -47,7 +57,7 @@ export default function StatsBar() {
       const total = await fetchTotalHolders();
       if (total > 0) setHolders(total.toLocaleString());
     } catch (e) {
-      console.error(e);
+      console.error('Failed to fetch holders:', e);
     }
   };
 

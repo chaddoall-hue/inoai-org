@@ -13,7 +13,7 @@ export default function TradeSection() {
             <iframe
               src="https://www.geckoterminal.com/cro/pools/0x8359cbcd88f5b1791bd158e7a2b83c977674f6c2?embed=1"
               className="absolute inset-0 w-full h-full border-0 rounded-2xl"
-              title="DexScreener Trade Chart"
+              title="GeckoTerminal Trade Chart"
             />
           </div>
         </GlassCard>
@@ -24,7 +24,7 @@ export default function TradeSection() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-sm text-purple-400 hover:text-purple-300 transition-colors"
           >
-            Open on DexScreener <ExternalLink className="w-3.5 h-3.5" />
+            Open on GeckoTerminal <ExternalLink className="w-3.5 h-3.5" />
           </a>
         </div>
       </div>
