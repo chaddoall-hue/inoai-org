@@ -27,7 +27,7 @@ export default function TradeChart() {
           src={DEXSCREENER_EMBED_URL}
           title="Dexscreener Chart"
           loading="eager"
-          className="h-full w-full border-0"
+          className="absolute inset-0 w-full h-full border-0"
         />
       </div>
     </div>
