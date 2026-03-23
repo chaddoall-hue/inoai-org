@@ -1,9 +1,9 @@
 import React from 'react';
 import { ExternalLink } from 'lucide-react';
 
-const INO_TOKEN_ADDRESS = '0x025f1575908d85815198390B2e5366FE754F8207';
-const DEXSCREENER_URL = `https://dexscreener.com/cronos/${INO_TOKEN_ADDRESS}?embed=1&theme=dark&trades=0&info=0`;
-const DEXSCREENER_EXTERNAL_URL = `https://dexscreener.com/cronos/${INO_TOKEN_ADDRESS}`;
+const DEXSCREENER_PAIR_ADDRESS = '0x8359cbCD88F5b1791bD158e7A2b83c977674F6C2';
+const DEXSCREENER_POOL_URL = `https://dexscreener.com/cronos/${DEXSCREENER_PAIR_ADDRESS}`;
+const DEXSCREENER_EMBED_URL = `${DEXSCREENER_POOL_URL}?embed=1&theme=dark&trades=0&info=0`;
 
 export default function TradeChart() {
   return (
@@ -11,10 +11,10 @@ export default function TradeChart() {
       <div className="flex items-center justify-between px-4 py-3 border-b border-white/10 bg-black/20">
         <div>
           <p className="text-[10px] uppercase tracking-widest text-gray-500">Dexscreener</p>
-          <h3 className="text-sm font-bold text-white">INO Chart</h3>
+          <h3 className="text-sm font-bold text-white">INO/WCRO Chart</h3>
         </div>
         <a
-          href={DEXSCREENER_EXTERNAL_URL}
+          href={DEXSCREENER_POOL_URL}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-1.5 text-xs text-purple-300 hover:text-purple-200"
@@ -25,7 +25,7 @@ export default function TradeChart() {
 
       <div className="relative h-[520px] bg-[#0b0b0f] sm:h-[580px]">
         <iframe
-          src={DEXSCREENER_URL}
+          src={DEXSCREENER_EMBED_URL}
           title="Dexscreener Chart"
           loading="lazy"
           className="absolute inset-0 w-full h-full border-0"
