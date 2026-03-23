@@ -22,7 +22,7 @@ export default function TradeChart() {
         </a>
       </div>
 
-      <div className="relative h-[400px] overflow-hidden bg-[#0b0b0f] sm:h-[440px]">
+      <div className="relative h-[500px] overflow-hidden bg-[#0b0b0f] sm:h-[560px]">
         <iframe
           src={GECKO_EMBED_URL}
           title="GeckoTerminal Chart"
@@ -30,14 +30,14 @@ export default function TradeChart() {
           className="absolute left-0 top-0 border-0"
           style={{
             width: '100%',
-            height: '760px',
+            height: '860px',
             display: 'block',
-            transform: 'translateY(-118px)',
+            transform: 'translateY(-58px)',
             transformOrigin: 'top center',
           }}
         />
 
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-12 bg-gradient-to-t from-[#0b0b0f] to-transparent" />
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-14 bg-gradient-to-t from-[#0b0b0f] to-transparent" />
       </div>
     </div>
   );
